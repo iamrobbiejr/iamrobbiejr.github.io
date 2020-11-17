@@ -213,7 +213,7 @@ function clickedCell(cell) {
 
 /* Restart the game*/
 function restartBnt(button) {
-	if (button.value == "Start AI") {
+	if (button.value == "AI Player: Start") {
 		aiTurn();
 		button.disabled = true;
 	}
@@ -229,7 +229,7 @@ function restartBnt(button) {
 				htmlBoard.innerHTML = "";
 			}
 		}
-		button.value = "Start AI";
+		button.value = "AI Player: Start";
 		msg = document.getElementById("message");
 		msg.innerHTML = "";
 	}
