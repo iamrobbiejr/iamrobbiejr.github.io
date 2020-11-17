@@ -1,4 +1,4 @@
-# tic-tac-toe-minimax
+# Tic-Tac-Toe-Using-Minimax-Algorithm
 An implementation of Minimax AI Algorithm on Tic-Tac-Toe (or Noughts and Crosses) game. Try it: [Tic-tac-toe - Minimax](https://iamrobbiejr.github.io/)
 
 <p align="center">
