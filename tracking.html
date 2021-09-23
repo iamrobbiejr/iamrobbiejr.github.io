@@ -53,9 +53,9 @@
         <div class="container">
             <div class="row" style="margin-top: 1%; margin-bottom: 1%">
                 <ul class="nav nav-pills fright">
-                    <li><a href="cart.html">cart</a></li>
+                    <li ><a href="cart.html">cart</a></li>
                     <li><a href="tracking.html">track order</a></li>
-<!--                    <li><a href="#">my account</a></li>-->
+                    <!--                    <li><a href="#">my account</a></li>-->
                 </ul>
             </div>
         </div>
@@ -77,12 +77,12 @@
                                         <span id="searchFilterValue">All Business Units</span> <i class="fa fa-angle-down"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                        <li><a href="#all">All Categories</a></li>
-                                        <li><a href="#chairs">PG Timbers</a></li>
-                                        <li><a href="#tables">PG Glass</a></li>
-                                        <li><a href="#dressers">PG Steel</a></li>
-                                        <li><a href="#desk">PG Paints</a></li>
-                                        <li><a href="#beds">PG Zimtile</a></li>
+                                        <li><a href="product.html">All Categories</a></li>
+                                        <li><a href="product.html">PG Timbers</a></li>
+                                        <li><a href="product.html">PG Glass</a></li>
+                                        <li><a href="product.html">PG Steel</a></li>
+                                        <li><a href="product.html">PG Paints</a></li>
+                                        <li><a href="product.html">PG Zimtile</a></li>
 
                                     </ul>
                                 </div><!-- /btn-group -->
@@ -126,7 +126,7 @@
                     <li >
                         <a href="index.html">Home</a>
                     </li>
-                    <li><a href="about.html">About</a></li>
+                    <li ><a href="about.html">About</a></li>
                     <li class="dropdown megaMenu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Product</a>
                         <ul class="dropdown-menu row m0" role="menu">
@@ -160,7 +160,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="product.html">Products</a></li>
@@ -173,17 +173,26 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
+    <!-- <div class="row topFeatures m0">
+        <div class="container">
+            <ul class="nav nav-justified text-center">
+                <li><img src="images/icons/returns.png" alt="">30-days returns</li>
+                <li><img src="images/icons/delivery-car.png" alt="">fast delivery</li>
+                <li><img src="images/icons/tel24-7.png" alt="">24/7 customer support</li>
+            </ul>
+        </div>
+    </div> -->
 </header> <!--Header-->
 
+
     <section id="breadcrumbRow" class="row">
-        <h2>Download product catalog</h2>
+        <h2>Track Orders</h2>
         <div class="row pageTitle m0">
             <div class="container">
-                <h4 class="fleft">catalog</h4>
+                <h4 class="fleft">My Orders</h4>
                 <ul class="breadcrumb fright">
                     <li><a href="index.html">home</a></li>
-                    <li class="active">catalog</li>
+                    <li class="active">My Orders</li>
                 </ul>
             </div>
         </div>
@@ -191,61 +200,43 @@
 
     <section class="row contentRowPad">
         <div class="container">
-            <div class="row" id="catalogs">
-                <div class="fleft catalogBox">
-                    <div class="thumbnail">
-                        <div class="thumbnailInner row m0">
-                            <img src="images/product/catalog/1.png" alt="">
-                            <div class="row m0 hoverBox">
-                                <a href="#"><i class="fa fa-download"></i><br>catalog</a>
+            <div class="row cartPage">
+                <h3 class="heading pageHeading">My Orders</h3>
+                <div class="col-md-4">
+                    <div class="row m0 contactForm">
+                        <form class="row m0" id="contactForm" method="post" name="contact" action="">
+
+                            <div class="row m0 captchaRow">
+                                <label for="captcha">Enter Order ID#</label>
+                                <input type="text" placeholder="Search" class="form-control" name="captcha" id="captcha">
                             </div>
-                        </div>
+                            <button class="btn btn-primary btn-lg filled" type="submit">Get Information</button>
+                        </form>
                     </div>
-                    <div class="row m0 catalogType">Steel <span>(pdf)</span></div>
                 </div>
-                <div class="fleft catalogBox">
-                    <div class="thumbnail">
-                        <div class="thumbnailInner row m0">
-                            <img src="images/product/catalog/2.png" alt="">
-                            <div class="row m0 hoverBox">
-                                <a href="#"><i class="fa fa-download"></i><br>catalog</a>
-                            </div>
+                <div class="col-md-8">
+                    <div class="tracking">
+                        <div style="color: rgb(252, 103, 49);
+    font-weight: 600;
+    margin-bottom: 2vh;
+    padding: 0 8%;
+    font-size: initial">
+                            Tracking Order</div>
+                    </div>
+                    <div class="progress-track">
+                        <ul id="progressbar">
+                            <li class="step0 active " id="step1">Ordered</li>
+                            <li class="step0 active text-center" id="step2">Shipped</li>
+                            <li class="step0 active text-right" id="step3">In Transit</li>
+                            <li class="step0 text-right" id="step4">Delivered</li>
+                        </ul>
+                    </div>
+                    <div class="track-footer">
+                        <div class="track-row">
+                            <div class="col-2"></div>
+                            <div class="col-8">Want any help? Please &nbsp;<a href="contact.html"> Contact Us</a></div>
                         </div>
                     </div>
-                    <div class="row m0 catalogType">Paints <span>(pdf)</span></div>
-                </div>
-                <div class="fleft catalogBox">
-                    <div class="thumbnail">
-                        <div class="thumbnailInner row m0">
-                            <img src="images/product/catalog/3.png" alt="">
-                            <div class="row m0 hoverBox">
-                                <a href="#"><i class="fa fa-download"></i><br>catalog</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m0 catalogType">Tiles <span>(pdf)</span></div>
-                </div>
-                <div class="fleft catalogBox">
-                    <div class="thumbnail">
-                        <div class="thumbnailInner row m0">
-                            <img src="images/product/catalog/4.png" alt="">
-                            <div class="row m0 hoverBox">
-                                <a href="#"><i class="fa fa-download"></i><br>catalog</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m0 catalogType">Glass <span>(pdf)</span></div>
-                </div>
-                <div class="fleft catalogBox">
-                    <div class="thumbnail">
-                        <div class="thumbnailInner row m0">
-                            <img src="images/product/catalog/5.png" alt="">
-                            <div class="row m0 hoverBox">
-                                <a href="#"><i class="fa fa-download"></i><br>catalog</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m0 catalogType">Timber <span>(pdf)</span></div>
                 </div>
 
             </div>
@@ -368,8 +359,8 @@
     <!--Nice Scroll-->
     <script src="vendors/nicescroll/jquery.nicescroll.js"></script>
 
-    <!--Flickr-->
-
+    <!--Bootstrap Select-->
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
 
     <!--Lightshot-->
     <script src="vendors/lightbox/js/lightbox.min.js"></script>
