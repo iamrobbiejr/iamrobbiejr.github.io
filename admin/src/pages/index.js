@@ -35,7 +35,7 @@ const Dashboard = () => {
   return (
     <>
       <Head>
-        <title>Login | Emergency Service</title>
+        <title>Login | Mental Health</title>
       </Head>
       <Box
         component="main"
