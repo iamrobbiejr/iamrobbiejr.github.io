@@ -2,7 +2,7 @@
 
 A mental health quiz app addressing comorbidities in mental illness
 
-https://nitrotap.github.io/mental-health-check/
+https://iamrobbiejr.github.io/
 
 ## Overview
 
@@ -15,10 +15,7 @@ Mental Health Check is a quiz app that helps users identify their feelings and d
 - Science-backed questions create an approachable app to help identify your feelings and direct you to useful resources
 
 ## Made By:
-[Nitrotap](https://github.com/nitrotap) - Kartik Jevaji   
-[Harabushi](https://github.com/Harabushi) - Colby Harris   
-[Meshtatsuo](https://github.com/Meshtatsuo) - Dominic Misasi   
-[kakudiego](https://github.com/kakudiego) - Diego Kaku   
+[iamrobbiejr](https://github.com/iamrobbiejr) - Robby Malunga    
 
 ## Preview
 
